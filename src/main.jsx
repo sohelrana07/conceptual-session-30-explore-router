@@ -9,6 +9,7 @@ import RootLayout from "./Layout/RootLayout";
 import PlantDetails from "./Pages/PlantDetails";
 import LoadingSpinner from "./Components/LoadingSpinner";
 import NotFound from "./Pages/NotFound";
+import Cart from "./Pages/Cart";
 
 const router = createBrowserRouter([
   {
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
       {
         path: "*",
         element: <NotFound></NotFound>,
+      },
+      {
+        path: "cart",
+        Component: Cart,
       },
     ],
   },

@@ -99,7 +99,12 @@ const Navbar = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink className="relative">
+            <NavLink
+              to="/cart"
+              className={({ isActive }) =>
+                `relative ${isActive ? "bg-black text-white" : ""}`
+              }
+            >
               <div>
                 <ShoppingCart></ShoppingCart>
                 <p className="absolute -top-1 -right-0">{carts.length}</p>

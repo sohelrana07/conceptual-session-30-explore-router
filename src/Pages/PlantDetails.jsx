@@ -1,6 +1,7 @@
 // import React, { useEffect, useState } from "react";
 import { useContext, useState } from "react";
 import { CartContext } from "../Providers/ContextProviders";
+import { useLoaderData, useLocation } from "react-router";
 
 
 const PlantDetails = () => {
