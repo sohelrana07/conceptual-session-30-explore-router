@@ -15,6 +15,16 @@ const PlantCard = ({ plant }) => {
         <p>Category: {category}</p>
         <p>Price: {price}$</p>
         <div className="card-actions justify-end">
+          
+          {/* simple system */}
+          {/* <Link
+            state={plant}
+            to={`/plantDetails/${id}`}
+            className="btn btn-primary"
+          >
+            View Details
+          </Link> */}
+          {/* Advanced system */}
           <button
             onClick={() =>
               navigate(`/plantDetails/${id}`, { state: { plant } })
