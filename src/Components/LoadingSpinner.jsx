@@ -10,7 +10,7 @@ const LoadingSpinner = () => {
     //   </p>
     // </div>
     <div className="flex justify-center items-center h-[calc(100vh-285px)]">
-      <PacmanLoader color={'navy'}></PacmanLoader>
+      <PacmanLoader></PacmanLoader>
     </div>
   );
 };

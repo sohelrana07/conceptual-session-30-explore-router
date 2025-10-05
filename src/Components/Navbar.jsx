@@ -62,6 +62,19 @@ const Navbar = () => {
                 About
               </NavLink>
             </li>
+            <li>
+              <NavLink
+                to="/cart"
+                className={({ isActive }) =>
+                  `relative ${isActive ? "bg-black text-white" : ""}`
+                }
+              >
+                <div>
+                  <ShoppingCart></ShoppingCart>
+                  <p className="absolute top-0 left-10">{carts.length}</p>
+                </div>
+              </NavLink>
+            </li>
           </ul>
         </div>
         <a className="btn btn-ghost text-xl">Explore Trees</a>
