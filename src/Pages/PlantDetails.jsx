@@ -28,7 +28,7 @@ const PlantDetails = () => {
   const { name, image, description } = location?.state.plant || {};
 
   return (
-    <div className="card bg-base-100 max-w-96 mx-auto my-8 shadow-sm">
+    <div className="card bg-base-100 w-[85%] md:max-w-96 mx-auto my-8 shadow-sm">
       <figure className="h-48 overflow-hidden">
         <img className="w-full h-full object-cover" src={image} alt="Shoes" />
       </figure>
